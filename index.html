@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Rohman's Portfolio — Champion Trail Run Athlete & UGC Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LEMBARAN MAJALAH UTAMA (EDITORIAL MAGAZINE SHEET) -->
+  <div class="magazine-sheet">
+
+    <!-- 1. TOP EDITORIAL NAVIGATION BAR -->
+    <header class="editorial-topbar">
+      <div class="topbar-brand">ABDUL ROHMAN • CHAMPION ATHLETE MEDIA KIT 2026</div>
+      <nav class="editorial-nav">
+        <a href="#intro">01. ABOUT ME</a>
+        <a href="#skills">02. SERVICES & SKILL</a>
+        <a href="#hobby">03. SNAPSHOTS</a>
+        <a href="#evidence">04. 25x PODIUM & SERTIF</a>
+        <a href="#review-fnb">05. F&B CASE STUDY</a>
+        <a href="#review-nonfnb">06. BRAND CASE STUDY</a>
+      </nav>
+    </header>
+
+    <!-- 2. HERO SPREAD -->
+    <section class="editorial-hero">
+      <div class="hero-left-col">
+        <div class="hero-title-group">
+          <span class="title-script-top">Abdul Rohman's</span>
+          <h1 class="title-mixed-main">
+            PORT<span class="title-serif-italic">folio</span>
+          </h1>
+        </div>
+
+        <div class="hero-role-Row">
+          <svg class="trail-icon-svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/>
+          </svg>
+          <span class="role-label">CHAMPION TRAIL RUN ATHLETE & OUTDOOR CREATOR</span>
+          <div class="mini-social-dots"></div>
+        </div>
+
+        <p class="hero-editorial-desc">
+          Kolektor <strong>25+ Podium Kejuaraan Trail Run Nasional</strong> (termasuk Juara 1 BDG 100 70K, UGM Trail 50K, Merbabu Sky Race, & Dieng Caldera).
+        </p>
+
+        <div class="hero-subnav-links">
+        </div>
+      </div>
+
+      <!-- Kanan: Tumpukan 3 Polaroid + Cutout Slider Utama -->
+      <div class="hero-right-col">
+        <div class="polaroid-collage-stage">
+          
+          <div class="pol-card pol-back-top">
+            <img src="adul (1).PNG" alt="BDG 100 Champion">
+            <span>BDG 100 (70K) • 1ST</span>
+          </div>
+
+          <div class="pol-card pol-back-mid">
+            <img src="adul (2).PNG" alt="Merbabu Sky Race">
+            <span>MERBABU SKY • 1ST</span>
+          </div>
+
+          <div class="pol-card pol-back-bottom">
+            <img src="adul (3).PNG" alt="UGM 50K Champion">
+            <span>UGM 50K • 1ST</span>
+          </div>
+
+          <div class="hero-main-polaroid" id="heroSlider">
+            <div class="badge-mustard-corner">CHAMPION #01</div>
+            <div class="hero-slides">
+              <div class="hero-slide active">
+                <img src="adul (1).PNG" onerror="this.src='https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=700&q=80'" alt="Abdul Rohman Slide 1" class="hero-img">
+              </div>
+              <div class="hero-slide">
+                <img src="adul (2).PNG" onerror="this.src='https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=700&q=80'" alt="Abdul Rohman Slide 2" class="hero-img">
+              </div>
+              <div class="hero-slide">
+                <img src="adul (3).PNG" onerror="this.src='https://images.unsplash.com/photo-1502224562085-639556652f33?auto=format&fit=crop&w=700&q=80'" alt="Abdul Rohman Slide 3" class="hero-img">
+              </div>
+              <div class="hero-slide">
+                <img src="adul (5).PNG" onerror="this.src='https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=700&q=80'" alt="Abdul Rohman Slide 4" class="hero-img">
+              </div>
+            </div>
+            <div class="hero-polaroid-footer">
+              <span class="pol-caption">ABDUL ROHMAN • TRAIL RUNNER</span>
+              <div class="slider-dots" id="heroSliderDots">
+                <span class="dot active" onclick="goToHeroSlide(0)"></span>
+                <span class="dot" onclick="goToHeroSlide(1)"></span>
+                <span class="dot" onclick="goToHeroSlide(2)"></span>
+                <span class="dot" onclick="goToHeroSlide(3)"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EDITORIAL 2-COLUMN ASYMMETRIC MAGAZINE GRID -->
+    <div class="editorial-master-grid">
+
+      <!-- ==================== KOLOM KIRI MAJALAH ==================== -->
+      <div class="editorial-col-left">
+
+        <!-- POIN 1: ABOUT ME -->
+        <section id="intro" class="ed-block block-white">
+          <div class="about-split-layout">
+            <div class="about-polaroid-pair">
+              <div class="mini-pol tilt-neg">
+                <img src="adul (4).PNG" onerror="this.src='https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80'" alt="Abdul Rohman Manglayang">
+              </div>
+              <div class="mini-pol tilt-pos">
+                <img src="adul (5).PNG" alt="Podium Juara 70K BDG100">
+              </div>
+            </div>
+
+            <div class="about-text-area">
+              <span class="poin-kicker">POIN 01 • INTRODUCTION</span>
+              <h2 class="ed-heading-mixed">
+                <span class="serif-word">About</span> <strong>ME</strong>
+              </h2>
+              <p>
+                Saya <strong>Abdul Rohman</strong>, pemuda berusia 20 tahun asal Jawa Barat dan atlet <strong>EIGER Trail Squad</strong> yang bertumbuh dari kawah candradimuka <strong>Manglayang Academia</strong>. Di arena lari lintas alam yang kerap didominasi pelari veteran, saya membuktikan bahwa usia belia mampu mendobrak kancah elite nasional.
+              </p>
+              <p>
+                Lahir dari keluarga pedagang sederhana, titik balik saya bermula di <em>Manglayang Everesting Challenge 2025</em> ketika harus meminjam uang pendaftaran dari ibu—lalu berhasil meraih Juara 2 dan menyerahkan seluruh hadiah kembali ke pangkuan beliau. Dedikasi tersebut berbuah rekor bersejarah saat menjuarai <strong>BDG100 Ultra 70K</strong> dengan waktu tercepat <strong>08:13:40</strong> (+3.490m elevasi), unggul hampir satu jam dari pelari internasional.
+              </p>
+              <p>
+                Bagi saya, setiap langkah di lintasan ekstrem bukan sekadar mengejar podium, melainkan wujud cinta pada sang ibunda, integritas doa orang tua, serta sarana menghadirkan kampanye <strong>Digital Marketing & UGC</strong> autentik bagi masa depan olahraga alam bebas Indonesia.
+              </p>
+
+              <div class="edu-mini-badges">
+                <div class="edu-tag">
+                  <strong>EIGER Trail Squad Athlete</strong>
+                  <span>Kawah Candradimuka Manglayang Academia</span>
+                </div>
+                <div class="edu-tag">
+                  <strong>Rekor Tercepat BDG100 (70K)</strong>
+                  <span>08:13:40 • Juara 1 Nasional</span>
+                </div>
+              </div>
+
+              <button class="btn-editorial-action" onclick="openSingleVideoModal('01. Introduction: Perjalanan Abdul Rohman dari Manglayang ke Rekor BDG100', 'https://drive.google.com/file/d/1u3KKAh2p1ECkXowxmDjBheP-yZtqf9JQ/preview', 'Narasi Poin 1: Kisah Abdul Rohman menembus panggung elite trail run di usia muda, perjuangan mengembalikan uang pendaftaran pertama ke ibunda, hingga mencetak rekor sepanjang sejarah di BDG100 70K bersama EIGER Adventure.')">
+                ▶ TONTON VIDEO PERKENALAN (POIN 1)
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- BAR STATISTIK ATLET -->
+        <section class="ed-stats-strip">
+          <div class="ed-stat-item">
+            <strong>25x</strong>
+            <span>Total Race Podiums</span>
+          </div>
+          <div class="ed-stat-item">
+            <strong>12x</strong>
+            <span>1st Place Champion</span>
+          </div>
+          <div class="ed-stat-item">
+            <strong>70 KM</strong>
+            <span>BDG 100 Ultra Winner</span>
+          </div>
+          <div class="ed-stat-item">
+            <strong>94%</strong>
+            <span>Runner Engagement</span>
+          </div>
+        </section>
+
+        <!-- POIN 5: REVIEW F&B (WARUNG TEH ROS) -->
+        <section id="review-fnb" class="ed-block block-white">
+          <span class="poin-kicker">POIN 05 • KULINER F&B CASE STUDY</span>
+          <div class="case-study-split">
+            
+            <div class="case-study-copy">
+              <h3 class="case-brand-title">WARUNG TEH ROS</h3>
+              <span class="case-brand-sub">Basecamp Fuel & Carbo Loading • Gn. Manglayang</span>
+              
+              <p>
+                Bagi atlet <em>trail run</em> dan pegiat alam yang sering melibas rute teknis Gunung Manglayang, <strong>Warung Mak Ros (Teh Ros)</strong> adalah tempat singgah wajib untuk mengisi kembali energi yang terkuras. Warung ini menghadirkan konsep serba ada: mulai dari aneka jajanan ringan, minuman hangat/dingin, hingga santapan makanan berat yang mengenyangkan.
+              </p>
+              <p>
+                Dengan harga makanan yang sangat bersahabat di <strong>kisaran Rp15.000-an</strong>, porsi melimpah, dan cita rasa rumahan yang nikmat, warung ini menjadi titik kumpul favorit komunitas. Dari sudut pandang <strong>Digital Marketing</strong>, Warung Mak Ros sukses memanfaatkan potensi Niche Community Hub dan Organic Word-of-Mouth (WOM) di kalangan pelari gunung serta pendaki, menjadikannya destinasi yang selalu direkomendasikan secara organik di media sosial.
+              </p>
+
+              <ul class="case-metrics-list">
+                <li>+ WARUNG SERBA ADA: JAJANAN & MAKANAN LENGKAP</li>
+                <li>+ HARGA MAKANAN TERJANGKAU KISARAN RP15.000</li>
+              </ul>
+
+              <button class="btn-editorial-action" style="margin-top: 10px;" onclick="openSingleVideoModal('05. Review F&B: Warung Teh Ros Gunung Manglayang', 'https://drive.google.com/file/d/1JFe01iaHpw02gyxL1ec7zVFJZZmt_S0j/preview', 'Narasi Poin 5: Ulasan kuliner Warung Mak Ros (Teh Ros) di Gunung Manglayang yang serba ada dengan harga makanan di kisaran Rp15.000-an.')">
+                ▶ PUTAR VIDEO REVIEW WARUNG TEH ROS
+              </button>
+            </div>
+
+            <div class="case-study-visuals">
+              <div class="phone-video-frame">
+                <iframe src="https://drive.google.com/file/d/1JFe01iaHpw02gyxL1ec7zVFJZZmt_S0j/preview" class="ed-vertical-iframe" allow="autoplay" allowfullscreen></iframe>
+                <div class="phone-frame-label">📹 VLOG REFUELLING MAK ROS (9:16)</div>
+              </div>
+
+              <div class="overlapping-case-polaroids">
+                <div class="case-pol p-tilt-1">
+                  <img src="warung1.jpeg" alt="Suasana Warung Mak Ros Manglayang">
+                  <small>Warung Teh Ros</small>
+                </div>
+                <div class="case-pol p-tilt-2">
+                  <img src="warung2.jpeg" alt="Menu Makanan Rp15k Warung Mak Ros">
+                  <small>Menu Rp15k-an</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- POIN 3: HOBBY (SEPAK BOLA) -->
+        <section id="hobby" class="ed-block block-dark">
+          <div class="snapshot-header-center">
+            <span class="poin-kicker kicker-mustard">POIN 03 • HOBBY & PASSION</span>
+            <h2 class="ed-heading-mixed text-white">
+              <strong>FOOTBALL</strong> <span class="serif-word text-mustard">Snapshot</span>
+            </h2>
+            <p class="snapshot-sub">
+              Di luar lintasan ekstrem <em>trail running</em>, Abdul Rohman menyalurkan energi dan menjaga ketajaman refleks melalui hobi <strong>Sepak Bola</strong>. Bagi Abdul, sepak bola bukan sekadar olahraga fisik pengisi waktu luang, melainkan sarana melatih <strong>kelincahan langkah, pengambilan keputusan kilat di bawah tekanan, serta soliditas komunikasi tim</strong>—fondasi mentalitas yang secara langsung memperkuat daya juangnya di panggung kejuaraan lari gunung.
+            </p>
+          </div>
+
+          <div class="snapshot-bento-collage">
+            <div class="snap-item">
+              <img src="bola (1).PNG" onerror="this.src='https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=500&q=80'" alt="Aksi Lapangan Sepak Bola 1">
+              <span class="snap-tag">On the Pitch</span>
+            </div>
+            <div class="snap-item">
+              <img src="bola (2).PNG" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=500&q=80'" alt="Aksi Lapangan Sepak Bola 2">
+              <span class="snap-tag">Teamwork & Chemistry</span>
+            </div>
+            <div class="snap-item">
+              <img src="bola (3).PNG" onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=80'" alt="Aksi Lapangan Sepak Bola 3">
+              <span class="snap-tag">Agility & Reflex</span>
+            </div>
+            <div class="snap-item">
+              <img src="bola (4).PNG" onerror="this.src='https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=500&q=80'" alt="Aksi Lapangan Sepak Bola 4">
+              <span class="snap-tag">Tactical Pace</span>
+            </div>
+            
+            <div class="snap-polaroid-feature">
+              <img src="bola (1).PNG" onerror="this.src='https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=500&q=80'" alt="Main Football Highlight">
+              <span>FOOTBALL PASSION</span>
+            </div>
+
+            <div class="snap-item">
+              <img src="bola (5).PNG" onerror="this.src='https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=500&q=80'" alt="Aksi Lapangan Sepak Bola 5">
+              <span class="snap-tag">High Stamina</span>
+            </div>
+          </div>
+
+          <div class="snapshot-action-footer">
+            <button class="btn-editorial-action btn-mustard-fill" onclick="openSingleVideoModal('03. Hobby: Filosofi Sepak Bola & Semangat Kerja Tim Abdul Rohman', 'https://drive.google.com/file/d/13qpyrSZ_Z6oGYJZTFH8A0CPJTT0h5d2l/preview', 'Narasi Poin 3: Cerita seputar kecintaan Abdul Rohman bermain sepak bola di lapangan hijau, mengasah insting refleks cepat, serta bagaimana sportivitas sepak bola membentuk karakter pantang menyerah di jalur ultra trail.')">
+              ▶ TONTON VIDEO HOBI SEPAK BOLA (POIN 3)
+            </button>
+          </div>
+        </section>
+
+        <!-- BRAND AMBASSADORSHIP & SPONSORSHIP -->
+        <section id="sponsorship" class="ed-block block-ambassador">
+          <span class="poin-kicker kicker-black">OFFICIAL BRAND AMBASSADOR</span>
+          
+          <div class="ambassador-header">
+            <h2 class="ed-heading-mixed text-black">
+              <strong>OFFICIAL</strong> <span class="serif-word">Partners</span>
+            </h2>
+            <p class="ambassador-subtext">
+              Dipercaya sebagai <strong>Brand Ambassador resmi</strong> untuk brand outdoor terkemuka dan teknologi sports smartwatch dunia. Menguji durabilitas gear di medan ekstrem 25+ podium kejuaraan nasional.
+            </p>
+          </div>
+
+          <div class="brand-cards-grid">
+            <div class="brand-partner-card">
+              <div class="brand-logo-wrap">
+                <img src="eiger.png" alt="Logo Eiger Adventure" class="brand-logo-img">
+              </div>
+              <span class="partner-role-badge">Official Outdoor Gear Partner</span>
+              <p>Apparel teknis, hydration vest, trail shoes, dan perlengkapan ultra endurance penunjang juara 1 nasional.</p>
+            </div>
+
+            <div class="brand-partner-card">
+              <div class="brand-logo-wrap">
+                <img src="amazfit.png" alt="Logo Amazfit" class="brand-logo-img">
+              </div>
+              <span class="partner-role-badge">Official Smartwatch & Telemetry</span>
+              <p>GPS tracking presisi, pemetaan rute GPX, monitoring VO2Max, dan metrik elevasi penakluk lintasan 70K.</p>
+            </div>
+          </div>
+
+          <div class="ambassador-footer-quote">
+            <span class="quote-symbol">“</span>
+            <em>Kolaborasi performa tinggi: menghadirkan bukti nyata ketangguhan gear dan telemetri langsung dari lintasan podium tertinggi.</em>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ==================== KOLOM KANAN MAJALAH ==================== -->
+      <div class="editorial-col-right">
+
+        <!-- TOP PERFORMING CONTENT & CONTACT BAR -->
+        <section id="contact-box" class="ed-block block-dark contact-header-block">
+          <div class="top-perf-grid">
+            <div class="perf-col-title">
+              <h3>TOP<br>PERFORMING<br><span class="serif-word text-mustard">athlete</span><br>STARTS<br>HERE</h3>
+            </div>
+
+            <div class="perf-col-socials">
+              <a href="https://www.instagram.com/arohhmnn?dlrf=b3g5bzdhZjRmaTRr&utm_source=qr" target="_blank" rel="noopener noreferrer"><span>IG</span> @arohhmnn</a>
+              <a href="https://www.tiktok.com/@abdulrohmann1945" target="_blank" rel="noopener noreferrer"><span>TT</span> @abdulrohmann1945</a>
+            </div>
+
+            <div class="perf-col-contact">
+              <div class="contact-item">
+                <strong>Email</strong>
+                <span>akuomanganteng@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <strong>Homebase</strong>
+                <span>Bandung, West Java (ID)</span>
+              </div>
+              <div class="signature-script">Abdul Rohman</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- POIN 2: SKILL & SERVICES -->
+        <section id="skills" class="ed-block block-white">
+          <div class="skills-header-row">
+            <div>
+              <span class="poin-kicker">POIN 02 • KEAHLIAN & LAYANAN ATLET</span>
+              <h2 class="ed-heading-mixed">
+                <strong>SKILL</strong> <span class="serif-word">& Expertise</span>
+              </h2>
+            </div>
+          </div>
+
+          <p class="ed-subtext">
+            Kombinasi unik antara <strong>Ketahanan Fisik Atletik</strong> (spesialisasi <em>ultra trail run</em> & navigasi telemetri) dengan <strong>Keahlian Teknologi Informasi</strong> (analisis kebutuhan sistem & perancangan antarmuka UI/UX).
+          </p>
+
+          <div class="ed-filter-tabs">
+            <button class="tab-btn active" onclick="filterSkill('all', this)">SEMUA SKILL (4)</button>
+            <button class="tab-btn" onclick="filterSkill('atletik', this)">TRAIL RUN & ATLETIK</button>
+            <button class="tab-btn" onclick="filterSkill('tech', this)">SYSTEM ANALYST & UI/UX</button>
+          </div>
+
+          <div class="phone-frames-grid" id="skillGrid">
+            <div class="soft-item phone-skill-card" data-category="atletik">
+              <div class="phone-screen">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=300&q=80" alt="Ultra Trail Running">
+                <span class="skill-pct">98%</span>
+              </div>
+              <strong>Ultra Trail Running</strong>
+              <small>Endurance Pacing, Elevasi & Vertikal</small>
+            </div>
+
+            <div class="soft-item phone-skill-card" data-category="atletik">
+              <div class="phone-screen">
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=300&q=80" alt="GPX & Route Navigation">
+                <span class="skill-pct">95%</span>
+              </div>
+              <strong>GPX & Route Telemetry</strong>
+              <small>Pemetaan Rute Gunung & Analisis Data</small>
+            </div>
+
+            <div class="soft-item phone-skill-card" data-category="tech">
+              <div class="phone-screen">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=300&q=80" alt="System Analyst">
+                <span class="skill-pct">92%</span>
+              </div>
+              <strong>System Analyst</strong>
+              <small>Flowchart, Riset Kebutuhan & Arsitektur</small>
+            </div>
+
+            <div class="soft-item phone-skill-card" data-category="tech">
+              <div class="phone-screen">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=300&q=80" alt="UI/UX Design">
+                <span class="skill-pct">94%</span>
+              </div>
+              <strong>UI/UX Design</strong>
+              <small>Wireframing, Wireflow & Figma Prototype</small>
+            </div>
+          </div>
+
+          <!-- Banner Video Skill: HANYA MUNCUL DI TAB "SEMUA SKILL" -->
+          <div class="skill-video-banner" id="skillVideoBanner">
+            <div>
+              <strong>SHOWCASE 3 VIDEO DOKUMENTASI SKILL</strong>
+              <p>Tonton 3 video dokumentasi aksi lari tanjakan, turunan teknis, dan ritme ultra trail.</p>
+            </div>
+            <button class="btn-editorial-action" onclick="openSkillVideoGallery()">
+              ▶ TONTON 3 VIDEO SKILL
+            </button>
+          </div>
+        </section>
+
+        <!-- POIN 4: EVIDENCE OF SKILL (25 REKOR PODIUM & FOTO SERTIFIKAT) -->
+        <section id="evidence" class="ed-block block-dark">
+          <div class="snapshot-header-center">
+            <span class="poin-kicker kicker-mustard">POIN 04 • EVIDENCE OF SKILL & 25x PODIUM RECORD</span>
+            <h2 class="ed-heading-mixed text-white">
+              <strong>CHAMPIONSHIP</strong> <span class="serif-word text-mustard">Hall of Fame</span>
+            </h2>
+            <p class="snapshot-sub">
+              Rekam jejak resmi <strong>25 podium kejuaraan Trail Run</strong> yang diraih Abdul Rohman di berbagai gunung dan lintasan ekstrem Indonesia.
+            </p>
+          </div>
+
+          <div class="podium-filter-bar">
+            <button class="podium-tab active" onclick="filterPodium('all', this)">Semua Podium (25)</button>
+            <button class="podium-tab" onclick="filterPodium('juara1', this)">🏆 Khusus Juara 1 (12)</button>
+            <button class="podium-tab" onclick="filterPodium('ultra', this)">⛰️ Kategori Ultra 45K–70K (6)</button>
+          </div>
+
+          <!-- Leaderboard 25 Podium -->
+          <div class="podium-wall-grid" id="podiumWall">
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="ultra">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Bandung 100 (BDG 100) 2026</strong>
+                <small>Kategori Ultra 70K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="ultra">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>UGM International Trail Run</strong>
+                <small>Kategori Ultra 50K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="ultra">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Kebumen Geo Trail Run</strong>
+                <small>Kategori Ultra 50K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="ultra">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>BFR Trail Run</strong>
+                <small>Kategori Ultra 50K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="ultra">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Votcha Trail Run 2026</strong>
+                <small>Kategori 45K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>SGP Trail Run</strong>
+                <small>Kategori 30K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>FAT Trail Run</strong>
+                <small>Kategori 27K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Semarang Trail Run</strong>
+                <small>Kategori 27K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Java Mountain Marathon</strong>
+                <small>Kategori 25K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Dieng Caldera Race</strong>
+                <small>Kategori 25K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Malabar Trail Run</strong>
+                <small>Kategori 25K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="medium">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>Merbabu Sky Race</strong>
+                <small>Kategori 20K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-gold" data-rank="juara1" data-dist="short">
+              <span class="medal-pill gold">🥇 JUARA 1</span>
+              <div class="race-meta">
+                <strong>DTBL Trail Run</strong>
+                <small>Kategori 17K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-silver" data-rank="other" data-dist="medium">
+              <span class="medal-pill silver">🥈 JUARA 2</span>
+              <div class="race-meta">
+                <strong>Lelono Trail Run</strong>
+                <small>Kategori 30K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-silver" data-rank="other" data-dist="medium">
+              <span class="medal-pill silver">🥈 JUARA 2</span>
+              <div class="race-meta">
+                <strong>Merbabu Trail Run</strong>
+                <small>Kategori 25K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-silver" data-rank="other" data-dist="medium">
+              <span class="medal-pill silver">🥈 JUARA 2</span>
+              <div class="race-meta">
+                <strong>Papandayan Trail Run 2025</strong>
+                <small>Kategori 21K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-silver" data-rank="other" data-dist="medium">
+              <span class="medal-pill silver">🥈 JUARA 2</span>
+              <div class="race-meta">
+                <strong>Papandayan Trail Run 2026</strong>
+                <small>Kategori 21K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-silver" data-rank="other" data-dist="short">
+              <span class="medal-pill silver">🥈 JUARA 2</span>
+              <div class="race-meta">
+                <strong>MEC Trail Run</strong>
+                <small>Kategori 17K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-bronze" data-rank="other" data-dist="ultra">
+              <span class="medal-pill bronze">🥉 JUARA 3</span>
+              <div class="race-meta">
+                <strong>Slamet Trail Run</strong>
+                <small>Kategori 45K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-bronze" data-rank="other" data-dist="medium">
+              <span class="medal-pill bronze">🥉 JUARA 3</span>
+              <div class="race-meta">
+                <strong>Outland Trail Run</strong>
+                <small>Kategori 30K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-bronze" data-rank="other" data-dist="medium">
+              <span class="medal-pill bronze">🥉 JUARA 3</span>
+              <div class="race-meta">
+                <strong>Votcha Trail Run 2025</strong>
+                <small>Kategori 25K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-bronze" data-rank="other" data-dist="short">
+              <span class="medal-pill bronze">🥉 JUARA 3</span>
+              <div class="race-meta">
+                <strong>Bukit Bintang Trail Run</strong>
+                <small>Kategori 15K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-bronze" data-rank="other" data-dist="short">
+              <span class="medal-pill bronze">🥉 JUARA 3</span>
+              <div class="race-meta">
+                <strong>Saung Komando Trail</strong>
+                <small>Kategori 10K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-top" data-rank="other" data-dist="medium">
+              <span class="medal-pill top-rank">🏅 JUARA 4</span>
+              <div class="race-meta">
+                <strong>Bandung 100 (BDG 100)</strong>
+                <small>Kategori 27,5K</small>
+              </div>
+            </div>
+
+            <div class="podium-item rank-top" data-rank="other" data-dist="medium">
+              <span class="medal-pill top-rank">🏅 POTENSIAL 5</span>
+              <div class="race-meta">
+                <strong>Tahura Trail Run</strong>
+                <small>Kategori 21K</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-subheading">BUKTI RESMI SERTIFIKAT JUARA & FINISHER (KLIK PRATINJAU FOTO):</div>
+
+          <div class="credentials-polaroid-grid">
+            <div class="cred-polaroid" onclick="openImageModal('Sertifikat BDG 100 Ultra 2026 — Sri Ajnyana 70K (08:13:40)', 'sertif (1).PNG')">
+              <div class="cred-img-thumb">
+                <img src="sertif (1).PNG" alt="Sertifikat BDG 100 Ultra 70K Abdul Rohman" class="cert-preview-img">
+                <span class="cert-pill-tag">🔍 LIHAT FOTO</span>
+              </div>
+              <h4>BDG 100 Ultra (70K)</h4>
+              <p>Rekor Tercepat 08:13:40 • Sri Ajnyana Ultra Trail 2026</p>
+            </div>
+
+            <div class="cred-polaroid" onclick="openImageModal('Sertifikat UGM Trail Run 2026 — Finisher 50K (05:06:58)', 'sertif (2).PNG')">
+              <div class="cred-img-thumb">
+                <img src="sertif (2).PNG" alt="Sertifikat UGM Trail Run 50K Abdul Rohman" class="cert-preview-img">
+                <span class="cert-pill-tag">🔍 LIHAT FOTO</span>
+              </div>
+              <h4>VOTCHA 2026 (45K)</h4>
+              <p>Juara 1 Overall Tangkuban Parahu • Waktu 05:00:11</p>
+            </div>
+
+            <div class="cred-polaroid" onclick="openImageModal('Sertifikat BFR Slamet Ultra 2026 — Juara 1 Kategori 50K (Rank 1st/83)', 'sertif (3).PNG')">
+              <div class="cred-img-thumb">
+                <img src="sertif (3).PNG" alt="Sertifikat BFR Slamet Ultra 50K Abdul Rohman" class="cert-preview-img">
+                <span class="cert-pill-tag">🔍 LIHAT FOTO</span>
+              </div>
+              <h4>BFR Slamet Ultra (50K)</h4>
+              <p>Juara 1 Overall & Category • Waktu 08:41:54 (ALTI)</p>
+            </div>
+
+            <div class="cred-polaroid" onclick="openImageModal('Sertifikat VOTCHA 2026 Tangkuban Parahu — Juara 1 Kategori 45K (05:00:11)', 'sertif (4).PNG')">
+              <div class="cred-img-thumb">
+                <img src="sertif (4).PNG" alt="Sertifikat VOTCHA 45K Abdul Rohman" class="cert-preview-img">
+                <span class="cert-pill-tag">🔍 LIHAT FOTO</span>
+              </div>
+              <h4>UGM Trail Run (50K)</h4>
+              <p>Finisher 50K • Catatan Waktu Tajam 05:06:58</p>
+            </div>
+          </div>
+
+          <div class="snapshot-action-footer">
+            <button class="btn-editorial-action btn-mustard-fill" onclick="openSingleVideoModal('04. Evidence of Skill: Momen Podium & Penerimaan Medali Abdul Rohman', 'https://drive.google.com/file/d/1c4xUvNbEgkyBlZV95eJGkk8yoScAqk44/preview', 'Narasi Poin 4: Dokumentasi video autentik momen Abdul Rohman menaiki podium kejuaraan nasional, penerimaan medali juara, serta pengakuan sertifikat prestasi lari lintas alam.')">
+              ▶ PUTAR VIDEO BUKTI PODIUM & SERTIFIKAT (POIN 4)
+            </button>
+          </div>
+        </section>
+
+        <!-- POIN 6: REVIEW NON-F&B (KAHF GROOMING) -->
+        <section id="review-nonfnb" class="ed-block block-mustard">
+          <span class="poin-kicker kicker-black">POIN 06 • NON-F&B BRAND CASE STUDY</span>
+          
+          <div class="case-study-split reverse-on-desktop">
+            <div class="case-study-visuals">
+              <div class="phone-video-frame border-black">
+                <video class="ed-vertical-video" autoplay muted loop playsinline controls poster="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80">
+                  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <div class="phone-frame-label bg-black-label">📹 REVIEW KAHF (9:16)</div>
+              </div>
+
+              <div class="overlapping-case-polaroids">
+                <div class="case-pol p-tilt-2">
+                  <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400&q=80" alt="Kahf Face Wash">
+                  <small>Face Wash</small>
+                </div>
+                <div class="case-pol p-tilt-1">
+                  <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" alt="Kahf Fragrance">
+                  <small>Fresh EDT</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-study-copy text-black">
+              <h3 class="case-brand-title text-black">KAHF GROOMING</h3>
+              <span class="case-brand-sub text-black">ParagonCorp • Runner's Personal Care</span>
+              
+              <p>
+                Berlari puluhan kilometer di bawah terik matahari dan debu vulkanik gunung menuntut perawatan wajah ekstra. Saya mengulas <strong>Kahf Face Wash & Eau de Toilette</strong> dengan formula <em>HydroBalance</em> yang selalu ada di <em>dropbag</em> lomba saya.
+              </p>
+              <p>
+                Dari sisi <strong>Digital Marketing</strong>, Kahf sangat tajam mengeksekusi <em>Targeted Positioning</em> untuk pria aktif lewat kampanye petualangan, iklan SEM/PPC Marketplace, serta aktivasi komunitas lari.
+              </p>
+
+              <ul class="case-metrics-list list-black-ink">
+                <li>+ STRONG OUTDOOR BRAND POSITIONING</li>
+                <li>+ TOP RANKING MARKETPLACE SEM & PPC</li>
+                <li>+ HIGH AFFILIATE & CART RECOVERY RATE</li>
+                <li>+ ACTIVE RUNNING EVENT SPONSORSHIP</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- FOOTER EDITORIAL BAR -->
+    <footer class="editorial-footer">
+      <div class="footer-stars">★ ★ ★ ★ ★</div>
+      <p>© 2026 <strong>Abdul Rohman</strong> </p>
+    </footer>
+
+  </div>
+
+  <!-- MODAL VIDEO INTERAKTIF (STRUKTUR 100% IDENTIK DENGAN BLOG ASLI) -->
+  <div id="videoModal" class="modal-overlay" onclick="closeModalOnBg(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Judul Video</h3>
+        <button class="btn-close-modal" onclick="closeVideoModal()">×</button>
+      </div>
+
+      <div class="modal-video-wrap">
+        <iframe id="modalDriveFrame" src="" allow="autoplay" allowfullscreen></iframe>
+      </div>
+
+      <div class="modal-video-dock" id="modalVideoNavBar" style="display: none;">
+        <button class="btn-dock-arrow" onclick="prevModalVideo()">
+          <span>◀</span> Video Sebelumnya
+        </button>
+        <span class="dock-counter-pill" id="videoCounterPill">Video 1 dari 3</span>
+        <button class="btn-dock-arrow" onclick="nextModalVideo()">
+          Video Selanjutnya <span>▶</span>
+        </button>
+      </div>
+
+      <div class="modal-narrative-box">
+        <span class="narrative-badge">Transkrip Narasi Video</span>
+        <p id="modalNarrativeText">Deskripsi narasi video akan tampil di sini.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LIGHTBOX FOTO SERTIFIKAT -->
+  <div id="imageModal" class="modal-overlay" onclick="closeImageModalOnBg(event)">
+    <div class="modal-box modal-box-img">
+      <div class="modal-header">
+        <h3 id="imageModalTitle">Pratinjau Sertifikat Kejuaraan</h3>
+        <div class="modal-header-actions">
+          <a id="imageDirectLink" href="#" target="_blank" class="btn-pdf-download">Buka Resolusi Penuh ↗</a>
+          <button class="btn-close-modal" onclick="closeImageModal()">×</button>
+        </div>
+      </div>
+      <div class="modal-img-wrap">
+        <img id="imageViewerImg" src="" alt="Pratinjau Sertifikat Kejuaraan">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
